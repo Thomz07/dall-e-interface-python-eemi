@@ -16,3 +16,7 @@ st.sidebar.video("https://youtu.be/ld-f9b3OSTg?si=cxKm-thNM78Nnusc")
 
 student_grade = st.selectbox("Séléctionner niveau d'étude", ["Bac", "Bac +2", "Bac+3", "Bac+5"])
 age = st.select_slider("Âge", range(0,99))
+if age > 18: 
+    st.write("Vous êtes majeur")
+else: 
+    st.write("Vous êtes mineur")
