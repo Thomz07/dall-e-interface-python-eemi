@@ -8,3 +8,5 @@ placeholders = ["Un magnifique kebab salade tomate oignon sauce algérienne bigg
 user_input = st.text_input("Tapez votre prompt", placeholder=placeholders[random.randint(0,2)])
 
 st.write(user_input)
+
+st.image("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/19/a3/b0/l-original-pain-maison.jpg?w=1100&h=-1&s=1")
