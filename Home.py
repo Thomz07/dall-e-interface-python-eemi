@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.title = "Mon formulaire"
+st.title("Mon formulaire")
