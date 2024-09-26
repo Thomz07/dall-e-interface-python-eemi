@@ -10,8 +10,8 @@ def prompt_dall_e():
     client = OpenAI(api_key=input_OpenAIKEY)
 
     try:
-        response = client.images.create(
-            model="dall-e-2",
+        response = client.images.generate(
+            model="dall-e-3",
             prompt=prompt,
             size="512x512",
             quality="standard",
