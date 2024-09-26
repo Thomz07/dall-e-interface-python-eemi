@@ -5,7 +5,7 @@ st.title("ChatGPT")
 
 input_OpenAIKEY = st.text_input("Entrez votre clé API")
 st.write(input_OpenAIKEY)
-prompt = st.text_input("Veuillez entrer un prompt pour créer une image")
+prompt = st.text_input("Veuillez entrer un prompt")
 
 def prompt_chatgpt():
     client = OpenAI(api_key=input_OpenAIKEY)
