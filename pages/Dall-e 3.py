@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 
-st.title("Le truc Dall-E là")
+st.title("Dall-E 3")
 
 input_OpenAIKEY = st.text_input("Entrez votre clé API", type="password")
 prompt = st.text_input("Veuillez entrer un prompt pour créer une image")
