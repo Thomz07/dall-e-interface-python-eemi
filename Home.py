@@ -11,3 +11,4 @@ st.write(user_input)
 st.image("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/19/a3/b0/l-original-pain-maison.jpg?w=1100&h=-1&s=1")
 
 st.sidebar.title("Didier Deschamps")
+st.sidebar.video("https://www.youtube.com/shorts/jMVEAcCz3CM")
