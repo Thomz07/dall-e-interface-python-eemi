@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 
-def prompt_dall_e():
+def prompt_dall_e(OpenAIKEY):
 
     client = OpenAI(api_key=OpenAIKEY)
 
@@ -19,6 +19,6 @@ def prompt_dall_e():
 
 st.title("Le truc Dall-E là")
 
-prompt = st.text_input("Veuillez entrer un prompt pour créer une image", on_change=prompt_dall_e())
-OpenAIKEY = st.text_input("Entrez votre clé API")
+input_OpenAIKEY = st.text_input("Entrez votre clé API")
+prompt = st.text_input("Veuillez entrer un prompt pour créer une image", on_change=prompt_dall_e(input_OpenAIKEY))
 
