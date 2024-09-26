@@ -7,7 +7,7 @@ input_OpenAIKEY = st.text_input("Entrez votre clé API", type="password")
 prompt = st.text_input("Veuillez entrer un prompt pour créer une image")
 
 def prompt_dall_e():
-    client = OpenAI(api_key=OpenAIKEY)
+    client = OpenAI(api_key=input_OpenAIKEY)
 
     try:
         response = client.images.create(
