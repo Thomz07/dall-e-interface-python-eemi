@@ -18,7 +18,7 @@ def prompt_dall_e():
             quality="standard",
             n=1,
         )
-        image_url = response['data'][0]['url']
+        image_url = response.data[0].url
         st.image(image_url, caption="Image générée par DALL·E")
     except Exception as e:
         st.error(f"Erreur lors de la génération de l'image: {e}")
