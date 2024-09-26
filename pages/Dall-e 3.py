@@ -11,9 +11,11 @@ def prompt_dall_e():
 
     try:
         response = client.images.create(
+            model="dall-e-2",
             prompt=prompt,
-            n=1,
             size="512x512",
+            quality="standard",
+            n=1,
         )
         image_url = response['data'][0]['url']
         st.image(image_url, caption="Image générée par DALL·E")
