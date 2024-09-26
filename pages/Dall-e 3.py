@@ -13,7 +13,7 @@ def prompt_dall_e():
         response = client.images.generate(
             model="dall-e-3",
             prompt=prompt,
-            size="512x512",
+            #size="512x512",
             quality="standard",
             n=1,
         )
